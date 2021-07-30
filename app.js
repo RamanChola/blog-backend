@@ -5,7 +5,6 @@ const mongoose = require("mongoose");
 const users = require("./routes/users");
 const posts = require("./routes/posts");
 const path = require("path");
-const cors = require("cors");
 const fs = require("fs");
 const newsApi = require("./util/newsApi");
 const { getFileStream } = require("./s3");
