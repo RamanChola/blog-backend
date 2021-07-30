@@ -105,7 +105,7 @@ const signup = async (req, res) => {
       {
         userId: createdUser.id,
       },
-      process.env.KEY,
+      process.env.JWT_KEY,
       { expiresIn: "1h" }
     );
   } catch (error) {
@@ -135,7 +135,7 @@ const login = async (req, res) => {
         {
           userId: existingUser.id,
         },
-        process.env.KEY,
+        process.env.JWT_KEY,
         { expiresIn: "1h" }
       );
     } catch (error) {
